@@ -1,5 +1,15 @@
 <script>
+    import Header from '../lib/Header.svelte';
     import '../pico.min.css'
 </script>
 
-<slot></slot>
+<Header />
+<main>
+    <slot></slot>
+</main>
+
+<style>
+    main {
+        padding: 1rem;
+    }
+</style>
